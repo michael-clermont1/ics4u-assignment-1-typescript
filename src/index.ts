@@ -10,7 +10,7 @@ import promptSync from 'prompt-sync'
 
 const prompt = promptSync()
 const userInput = prompt('Enter the selection (rock,paper,scissors): ')
-const random = Math.floor(Math.random() * 3)
+const random = Math.floor(Math.random() * 3 + 1)
 const userLower = userInput.toLowerCase()
 let computerInput
 if (random === 1) {
