@@ -20,7 +20,7 @@ if (random === 1) {
 } else if (random === 3) {
   computerInput = 'paper'
 }
-console.log(`The computer guessed ${computerInput}`)
+console.log(`The computer gussed ${computerInput}.`)
 
 switch (computerInput) {
   case 'rock':
