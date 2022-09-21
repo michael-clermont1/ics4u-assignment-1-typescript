@@ -12,7 +12,7 @@ const prompt = promptSync()
 const userInput = prompt('Enter the selection (rock,paper,scissors): ')
 const random = Math.floor(Math.random() * 3 + 1)
 const userLower = userInput.toLowerCase()
-let computerInput
+let computerInput = 'invalid'
 if (random === 1) {
   computerInput = 'scissors'
 } else if (random === 2) {
@@ -20,7 +20,7 @@ if (random === 1) {
 } else if (random === 3) {
   computerInput = 'paper'
 }
-console.log(`The computer gussed ${computerInput}.`)
+console.log(`The computer guessed ${computerInput}.`)
 
 switch (computerInput) {
   case 'rock':
