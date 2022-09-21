@@ -20,10 +20,41 @@ if (random === 1) {
 } else if (random === 3) {
   computerInput = 'paper'
 }
-if (computerInput === userLower) {
-  console.log('You won aganist the computer!')
-} else {
-  console.log('You lost aganist the computer!')
-}
+console.log(`The computer guessed ${computerInput}`)
 
+switch (computerInput) {
+  case 'rock':
+    if (userLower === 'rock') {
+      console.log('You tie with the computer!')
+    } else if (userLower === 'paper') {
+      console.log('You win aganist the computer!')
+    } else if (userLower === 'scissors') {
+      console.log('You lost against the computer!')
+    } else {
+      console.log('Invalid input.')
+    }
+    break
+  case 'paper':
+    if (userLower === 'rock') {
+      console.log('You lost with the computer!')
+    } else if (userLower === 'paper') {
+      console.log('You tie with the computer!')
+    } else if (userLower === 'scissors') {
+      console.log('You win against the computer!')
+    } else {
+      console.log('Invalid input.')
+    }
+    break
+  case 'scissors':
+    if (userLower === 'rock') {
+      console.log('You win against the computer!')
+    } else if (userLower === 'paper') {
+      console.log('You lose against the computer!')
+    } else if (userLower === 'scissors') {
+      console.log('You tie with the computer!')
+    } else {
+      console.log('Invalid input.')
+    }
+    break
+}
 console.log('\nDone.')
